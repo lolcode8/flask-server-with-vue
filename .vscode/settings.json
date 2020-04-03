@@ -1,0 +1,5 @@
+{
+  "python.pythonPath": "/Users/rahulio/.pyenv/versions/3.7.3/bin/python3.7",
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true
+}
