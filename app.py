@@ -21,9 +21,10 @@ def contact():
 
 @app.route("/test")
 def test():
-    my_dict = {"title": "Bayside",
-               "genre": "Alternative",
-               }
+    my_dict = {
+        "title": "Bayside",
+        "genre": "Alternative",
+    }
     return json.dumps(my_dict)
 
 
