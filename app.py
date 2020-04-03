@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, json
 
 app = Flask(__name__)
 print(__name__)
@@ -17,6 +17,14 @@ def about():
 @app.route("/contact")
 def contact():
     return render_template("contact.html")
+
+
+@app.route("/test")
+def test():
+    my_dict = {"title": "Bayside",
+               "genre": "Alternative",
+               }
+    return json.dumps(my_dict)
 
 
 # To run the flask server in debug mode
